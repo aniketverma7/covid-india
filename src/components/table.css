@@ -1,0 +1,80 @@
+table{
+    border-collapse: collapse;
+    font-size: 1rem;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+    margin: 20px 20px;
+}
+table thead tr{
+    background-color: #009879;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+table thead tr th{
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+table th ,table td{
+    padding: 12px 17px;
+}
+
+table tbody tr{
+    border-bottom: 1px solid #dddddd;
+    opacity: 0.7;
+}
+table tbody tr:nth-of-type(even){
+    background-color: #cac7c7;
+}
+table tbody tr:last-child{
+    border-bottom: 2px solid #009879;
+}
+table tbody tr:hover{
+    opacity: 1;
+}
+table thead tr th:hover{
+    background-color: cadetblue;
+
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table .search_bar{
+    width: 80%;
+    height: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgb(175, 171, 171);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.search_bar > input{
+    border: none;
+    outline: none;
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+}
+.search_icon{
+    color:grey;
+}
+
+@media (max-width : 500px) {
+    table {
+        border-collapse: collapse;
+        font-size: 0.7rem;
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 15%);
+        margin: 10px 0px;
+        overflow: hidden;
+        min-width: 90vw;
+        width: 90vw;
+    }
+    table th ,table td{
+        padding: 13px 6px;
+    }
+}
